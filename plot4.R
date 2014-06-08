@@ -13,7 +13,7 @@ datetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 power$datetime <- datetime
  
 ##Plotting graphic
-par(mfrow = c(2,2))par(mfrow = c(2,2))    
+par(mfrow = c(2,2)) 
 with (power, { 
 	##Build first plot
 	plot(datetime, Global_active_power, xlab = "", type = "n")
@@ -25,9 +25,9 @@ with (power, {
 	
 	##Build third plot
 	plot(datetime, Sub_metering_1, xlab = "", ylab = "Energy submetering", type = "n", col = "black")
-	lines(datetime, Sub_metering_1, xlab = "", ylab = "Energy submetering", col = "black")
-	lines(datetime, Sub_metering_2, xlab = "", ylab = "Energy submetering", col = "red")
-	lines(datetime, Sub_metering_3, xlab = "", ylab = "Energy submetering", col = "blue")
+	lines(datetime, Sub_metering_1, xlab = "", col = "black")
+	lines(datetime, Sub_metering_2, xlab = "", col = "red")
+	lines(datetime, Sub_metering_3, xlab = "", col = "blue")
 	legend("topright", legend = names(power)[7:9], lty = c (1,1,1), lwd = c(2,2,2), col = c("black","red","blue"), box.lwd = 0)
 	
 	##Build forth plot
