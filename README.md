@@ -84,7 +84,7 @@ include the code that creates the PNG file.
 
 * Add the PNG file and R code file to your git repository
 
-When you are finished with the assignment, push your git repository to
+When you are done with the assignment, push your git repository to
 GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
